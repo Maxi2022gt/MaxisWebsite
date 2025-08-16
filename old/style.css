@@ -1,0 +1,86 @@
+h1, p {
+    text-align: center;
+  }
+  #h {
+    animation-name: Fade;
+    animation-duration: 3s;
+  }
+  @keyframes Fade {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  } 
+  body {
+    background: #ff001e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6e0b00, #ff001e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6e0b00, #ff001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Oxygen', sans-serif;
+    overflow-x: hidden;
+  }
+
+
+  button {
+    background-color: #c21700;
+    font-family: 'Oxygen', sans-serif;
+    border-radius: 90px;
+    border-color: red;
+    width: 100px; 
+    margin: 0 auto;
+    display: block;
+  }
+
+  #socialnetworks {
+    transform: scale(200%)  rotate(0.01turn);
+    background-color: #810000;
+    animation-name: socialnetworkanimation;
+    animation-duration: 3s;
+  }
+
+  @keyframes socialnetworkanimation {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(2)  rotate(0.01turn);
+    }
+  }
+
+  textarea {
+    border-radius: 10%;
+    padding: 0;
+    margin: auto;
+    display: block;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  background-color: black;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+  background-color: white;
+}
+
+#fof {
+  background-color: darkred;
+  border-radius: 25px;
+}
+#lnk {
+  text-align: center;
+}
