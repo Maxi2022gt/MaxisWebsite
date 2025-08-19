@@ -8,33 +8,33 @@ window.mobileCheck = function() {
 };
 function fi() {
     if (!window.mobileCheck()) {
-    const screenWidth = window.screen.availWidth-40;
-    const screenHeight = window.screen.availHeight-80;
-    const w = window.open("", "fish", "width=200,height=200");
+        const screenWidth = window.screen.availWidth-40;
+        const screenHeight = window.screen.availHeight-80;
+        const w = window.open("", "fish", "width=200,height=200");
 
-    let popupWidth = 200;
-    let popupHeight = 200;
+        let popupWidth = 200;
+        let popupHeight = 200;
 
-    let x = 100, y = 100;
-    let vx = 15, vy = 0; 
+        let x = 100, y = 100;
+        let vx = 15, vy = 0; 
 
-    w.document.write("🐟".repeat(Math.trunc(Math.random() * 100 + 100)));
+        w.document.write("🐟".repeat(Math.trunc(Math.random() * 100 + 100)));
 
-    setInterval(() => {
-        if (!w.closed) {
-            vy += 1;
-            x += vx;
-            y += vy;
-            if (x <= 0 || x + popupWidth >= screenWidth) vx = -vx;
-            if (y + popupHeight >= screenHeight) vy = -35;
+        setInterval(() => {
+            if (!w.closed) {
+                vy += 1;
+                x += vx;
+                y += vy;
+                if (x <= 0 || x + popupWidth >= screenWidth) vx = -vx;
+                if (y + popupHeight >= screenHeight) vy = -35;
 
-            w.moveTo(x, y);
-        }
-    }, 30);
-}
-else {
-    alert("Mobile has been detected! This uses window moving, so it won't work.")
-}
+                w.moveTo(x, y);
+            }
+        }, 30);
+    }
+    else {
+        alert("Mobile has been detected! This uses window moving, so it won't work.")
+    }
 }
 function pad(x) {
     return x.toString().padStart(2,"0")
@@ -42,16 +42,17 @@ function pad(x) {
 function time() {
     var timp = document.getElementsByClassName("timp")[0];
     setInterval(()=>{
-    var Time = new Date();
-    // [0] = hour
-    // [1] = minute
-    // [2] = second
-    var actime = [Time.getHours(),Time.getMinutes(),Time.getSeconds()];
-    var hour = pad(actime[0]);
-    var minu = pad(actime[1]);
-    var secn = pad(actime[2]);
-    var final = hour + ":" + minu + ":" + secn;
-    timp.innerHTML = final;
+        var Time = new Date();
+        // [0] = hour
+        // [1] = minute
+        // [2] = second
+        var actime = [Time.getHours(),Time.getMinutes(),Time.getSeconds()];
+        var hour = pad(actime[0]);
+        var minu = pad(actime[1]);
+        var secn = pad(actime[2]);
+        var final = hour + ":" + minu + ":" + secn;
+
+        timp.innerHTML = final;
     },10)
 
 }
