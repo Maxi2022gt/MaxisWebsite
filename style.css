@@ -9,9 +9,47 @@
     color: white;
   }
 
-  ul {
+ul, #itnames, #thingsdo {
   list-style-position: inside; /* bring bullets into the text box */
   padding-left: 0;             /* remove default left padding */
   display: inline-block;       /* make the list shrink to fit, so body’s text-align works */
   text-align: left;            /* optional: align list items themselves neatly */
+}
+
+a:visited, a {
+  color: rgb(117, 255, 117);
+}
+
+#buton, #fi {
+  color: white;
+  background-color: darkred;
+  border-style:solid;
+  border-radius: 10px;
+  border-color: rgb(32,0,0);
+}
+
+textarea {
+  background-color: black;
+  color: white;
+  resize: none;
+}
+
+#navbar {
+    list-style-type: none;
+  margin: 0;
+  position: fixed;
+  top: 0; /* Sticks to the very top of the viewport */
+  /* Optional: Add other styling like background-color, padding, z-index */
+  background-color: black;
+  padding: 10px;
+  z-index: 100; /* Ensures it appears above other content */
+  left: 0px;
+}
+
+.navbarele {
+  display: inline;
+}
+
+.abar {
+    color: white !important;
 }
