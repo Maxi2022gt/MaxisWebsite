@@ -74,4 +74,4 @@ function scramble() {
 }
 
 
-document.getElementById("fi").innerHTML = "🐟".repeat(Math.trunc(Math.random()*10+1))
+document.getElementById("fi").innerHTML = "🐟".repeat(Math.trunc(Math.random()*10+1));
