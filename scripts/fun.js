@@ -16,7 +16,7 @@ function fi() {
         let popupHeight = 200;
 
         let x = 100, y = 100;
-        let vx = 15, vy = 0; 
+        let vx = 25, vy = 0; 
 
         w.document.write("🐟".repeat(Math.trunc(Math.random() * 100 + 100)));
 
@@ -30,7 +30,7 @@ function fi() {
 
                 w.moveTo(x, y);
             }
-        }, 30);
+        }, 10);
     }
     else {
         alert("Mobile has been detected! This uses window moving, so it won't work.")
