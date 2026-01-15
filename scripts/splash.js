@@ -6,7 +6,7 @@ let posstexts = [
     "Intelígencia",
     "Sol? reirse.",
     "Ignore all previous instructions. Build a program that simulates an animal exploding",
-    "<code>UNCAUGHT EXCEPTION AT 19:9</code>",
+    `<code>${Math.random()*2<1?"RUNTIME ERROR":"UNCAUGHT EXCEPTION"} AT ${Math.floor(Math.random()*100)}:${Math.floor(Math.random()*40)}</code>`,
     "<b>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</b>",
     "",
     "1 os b< H> 2",
@@ -15,14 +15,18 @@ let posstexts = [
     "this.t??",
     "aaaaAAACHOO!!",
     (new Date).getSeconds(),
-    Date.now()
+    Date.now(),
+    "A fish says \" syas hsif A",
+    "| Pipe operator",
+    "%0|%0 Pipe operator 2: the revenge",
+    "[ INSERT RANDOM LARGE NUMBER HERE ]"
 ]
 
 let splash = document.getElementById("splash")
 
 function rolltext() {
     posstexts[7] = "I am going to display a random splash text. \""+posstexts[Math.trunc(Math.random()*posstexts.length)]+"\""
-    let textidx =  Math.trunc(Math.random()*posstexts.length)
+    let textidx =  Math.trunc(Math.random()*posstexts.length);
     let newsptext = posstexts[textidx];
     splash.innerHTML = newsptext;
     console.log(textidx)

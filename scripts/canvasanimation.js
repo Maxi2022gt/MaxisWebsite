@@ -10,6 +10,11 @@ let w = canv.width;
 let h = canv.height;
 let t = [128,64];
 let frame = 0;
+let paused = false;
+function pausecanvas() {
+    paused = !paused;
+    document.getElementById("pcanv").textContent = paused?"▶️ Play banner animation":"⏸️ Pause banner animation"
+}
 function draw() {
 for (let x = -30; x <= (w+30); x += 30) {
 for (let y = -30; y <= (h+30); y += 30) {
@@ -25,7 +30,6 @@ ctx.fillText("Hello, I am Maxi.",w/2,h/2+Math.sin(frame/10)*5)
 ctx.font = "10px Arial"
 ctx.fillText("(Commonly known as Maxi Toys)",w/2,h/2+Math.sin(frame/10)*5+30)
 frame++;
-requestAnimationFrame(draw)
 }
 
-draw()
+setInterval(()=>{if (!paused) draw(); else frame = 0},1)

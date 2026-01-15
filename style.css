@@ -20,7 +20,7 @@ a:visited, a {
   color: rgb(117, 255, 117);
 }
 
-#buton, #fi {
+.buton {
   color: white;
   background-color: darkred;
   border-style:solid;
