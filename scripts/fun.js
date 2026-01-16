@@ -40,7 +40,7 @@ function pad(x) {
     return x.toString().padStart(2,"0")
 }
 function time() {
-    var timp = document.getElementsById("timp");
+    var timp = document.getElementById("timp");
     setInterval(()=>{
         var Time = new Date();
         // [0] = hour
