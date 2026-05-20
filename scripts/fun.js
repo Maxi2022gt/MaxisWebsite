@@ -1,5 +1,3 @@
-// TODO: add more stuff
-
 window.mobileCheck = function() {
     // https://stackoverflow.com/a/11381730
   let check = false;
@@ -30,15 +28,17 @@ function fi() {
 
                 w.moveTo(x, y);
             }
-        }, 10);
+        }, 50);
     }
     else {
         alert("Mobile has been detected! This uses window moving, so it won't work.")
     }
 }
+
 function pad(x) {
     return x.toString().padStart(2,"0")
 }
+
 function time() {
     var timp = document.getElementById("timp");
     setInterval(()=>{

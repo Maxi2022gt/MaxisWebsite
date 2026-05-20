@@ -1,4 +1,4 @@
-console.log([] + {})
+console.log([] + {}) // this easter egg isn't discontinued yet :)
 
 let posstexts = [
     "Now on the Nintendo DS™!",
@@ -11,7 +11,7 @@ let posstexts = [
     "",
     "1 os b< H> 2",
     "SpiiIIIiIIinn... SppiiiiIIIIIInnn...",
-    "124816326412851210242048409681921638432768565536131072",
+    "124816326412851210242048409681921638432768565536131072262144",
     "this.t??",
     "aaaaAAACHOO!!",
     (new Date).getSeconds(),
@@ -19,7 +19,10 @@ let posstexts = [
     "A fish says \" syas hsif A",
     "| Pipe operator",
     "%0|%0 Pipe operator 2: the revenge",
-    "[ INSERT RANDOM LARGE NUMBER HERE ]"
+    "[ INSERT RANDOM LARGE NUMBER HERE ]",
+    "0xDEADBADBEEF",
+    "wsl sudo rm -rf /* Pipe operator 3: The ascending",
+    "just now realized that one of the splash texts are the powers of 2. somehow forgot that lmao"
 ]
 
 let splash = document.getElementById("splash")

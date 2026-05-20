@@ -10,22 +10,26 @@
   }
 
 ul, #itnames, #thingsdo {
-  list-style-position: inside;
-  padding-left: 0;
-  display: inline-block;
-  text-align: left;
+    list-style-position: inside;
+    padding-left: 0;
+    display: inline-block;
+    text-align: left;
 }
 
 a:visited, a {
-  color: rgb(117, 255, 117);
+    color: rgb(117, 255, 117);
 }
 
 .buton {
   color: white;
   background-color: darkred;
-  border-style:solid;
-  border-radius: 10px;
+  border-style: solid;
+  border-radius: 5px;
   border-color: rgb(32,0,0);
+}
+
+.buton:hover {
+    background-color: rgb(131, 48, 48);
 }
 
 textarea {
@@ -36,17 +40,17 @@ textarea {
 
 #navbar {
     list-style-type: none;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  background-color: black;
-  padding: 10px;
-  z-index: 100; 
-  left: 0px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    padding: 10px;
+    z-index: 100; 
+    left: 0px;
 }
 
 .navbarele {
-  display: inline;
+    display: inline;
 }
 
 .abar {
