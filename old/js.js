@@ -37,7 +37,7 @@ function reversetext() {
   var result = document.getElementById("textbox").value;
   // let BadWords = ["<style>","</style>","<b>","</b>"];
   // if (result.includes(BadWords[0])) {
-  //   e = alert("ACE Detected! i have prevented you to reverse this text, as it can cause some harful things.")
+  //   e = alert("ACE Detected! i have prevented you to reverse this text, as it can cause some harful things.") // 22-08-2026 - why'd i put ACE in there??
   // }
   // else {
   //   if (result.includes(BadWords[1]) ) {
@@ -51,7 +51,7 @@ function reversetext() {
   // }
   // ^^ detection didnt work. i have to disable the antidetection then :<
   reversedText = result.split("").reverse().join("")
-  document.getElementById("Out").innerHTML = reversedText;
+  document.getElementById("Out").innerText = reversedText; // 22-08-2026 - I know this might be cheating since I updated a old version, but it was to fix a XSS attack or something
   console.log(reversedText)
 }
 async function CopyText() {
